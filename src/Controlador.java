@@ -22,7 +22,7 @@ public class Controlador {
 		    i = sc.nextInt();
 		    switch (i)
 		    {
-		    case 1:  break;
+		    case 1: altaAvio();  break;
 		    	
 		    case 2:  break;
 		    	
@@ -46,10 +46,32 @@ public class Controlador {
 			a1.buscarAlumne(MatriculaBuscar);
 		}*/
 		
+	
+	
 	public static void altaAvio (){
-		String model, matricula, marca;
+		String model="", matricula="", marca ="";
 		int passatges=0;
-		int posX, posY;
+		int posX = 0, posY = 0;
+		
+			System.out.println("Entra el model de l'avió:");
+			model=sc.next();
+			sc.nextLine();
+			System.out.println("Entra la matrícula de l'avio:");
+			matricula=sc.next();
+			sc.nextLine();
+			System.out.println("Entra la marca de l'avió:");
+			marca=sc.next();
+			sc.nextLine();
+			System.out.println("Entra el nombre de passatges que van a l'avió:");
+			passatges=sc.nextInt();
+			sc.nextLine();
+			System.out.println("Entra la posició X de l'avió:");
+			posX=sc.nextInt();
+			sc.nextLine();
+			System.out.println("Entra la posició Y de l'avió:");
+			posY=sc.nextInt();
+			sc.nextLine();
+		
 		
 		espai.afegirAvions(model, matricula, marca, passatges, posX, posY);
 	}
