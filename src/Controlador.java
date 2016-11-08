@@ -9,7 +9,7 @@ public class Controlador {
 		
 		int i;
 		//a1=new Aula(1,"Aula Química",2);
-		espai = new EspaiAeri("Espai aeri asd", 5);
+		espai = new EspaiAeri();
 		do{
 			System.out.println("Entra una opció de les següents");
 			System.out.println("1.- Dona d'alta un avió");
@@ -28,7 +28,7 @@ public class Controlador {
 		    	
 		    case 3:  break;
 		    
-		    //case 4: infoEspaiAeri(); break;
+		    case 4: espai.infoEspaiAeri(); break;
 		    	
 		    }
 		}while (i!=0);
@@ -52,6 +52,7 @@ public class Controlador {
 		String model="", matricula="", marca ="";
 		int passatges=0;
 		int posX = 0, posY = 0;
+		
 		
 			System.out.println("Entra el model de l'avió:");
 			model=sc.next();

@@ -6,21 +6,26 @@ public class EspaiAeri {
 	private int capacitat = 0;
 	String nomEspaiAeri;
 	
-	public EspaiAeri(String NomEspaiAeri, int numeroAvions){
-		this.numAvions = numeroAvions;
+	public EspaiAeri(){
+		/*this.numAvions = numeroAvions;
 		this.nomEspaiAeri = NomEspaiAeri;
-		this.capacitat = capacitat;
 		
 		
-		LlistaAvions = new Avions[numeroAvions];
 		
+		LlistaAvions = new Avions[numeroAvions];*/
+		
+		this.numAvions=0;
+		this.capacitat=0;
+		LlistaAvions = new Avions[5];
 	}
 	
-	private int getnumAvions(){
+	public int getnumAvions(){
 		return numAvions;
 	}
 	
-	
+	public int getCapacitat(){
+		return capacitat;
+	}
 	
 	
 	public void afegirAvions(String matr, String mod, String marc, int passatges, int posX, int posY)
@@ -50,7 +55,22 @@ public class EspaiAeri {
 			}
 			voltes++;
 		}
+		
+		CreacioAvio.infoEspaiAeri();
 	}
+	
+	public void mostrarAvions(){
+		
+		
+		
+	}
+
+	public void infoEspaiAeri() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 
 	
 }
